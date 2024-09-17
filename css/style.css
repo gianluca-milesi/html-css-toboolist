@@ -53,6 +53,8 @@ h1 {
     max-width: 1024px;
     margin: 0 auto;
     margin-top: 50px;
+    display: flex;
+    flex-direction: column;
     background-color: rgb(240, 240, 240);
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
@@ -62,19 +64,35 @@ h1 {
     padding: 20px 40px;
 }
 
-
-
-
-
-
+.input-content {
+    padding: 10px 20px;
+}
 
 
 
 
 /* Utilities */
-.blue-higlight {
-    background-color: rgb(69, 171, 233);
+.blue-highlight,
+.purple-highlight,
+.green-highlight,
+.orange-highlight {
     border-radius: 10px;
     color: rgb(255, 255, 255);
     padding: 4px;
+}
+
+.blue-highlight {
+    background-color: rgb(69, 171, 233);
+}
+
+.purple-highlight {
+    background-color: rgb(156, 114, 228);
+}
+
+.green-highlight {
+    background-color: rgb(100, 192, 168);
+}
+
+.orange-highlight {
+    background-color: rgb(242, 158, 51);
 }
