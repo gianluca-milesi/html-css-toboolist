@@ -45,12 +45,6 @@ main {
     justify-content: center;
     align-items: center;
 } */
-.tasks {
-    padding: 5px 40px;
-}
-.input-content {
-    padding: 10px 20px;
-}
 .container-header {
     display: flex;
     justify-content: start;
@@ -71,6 +65,12 @@ main {
 }
 button:hover {
     scale: 1.1;
+}
+.tasks {
+    padding: 5px 40px;
+}
+.input-content {
+    padding: 10px 20px;
 }
 
 
@@ -109,4 +109,16 @@ button:hover {
 
 .olive-highlight {
     background-color: rgb(170, 195, 37);
+}
+.checked {
+    color: green;
+    border: 1px solid green;
+    border-radius: 100%;
+    padding: 0 3px;
+}
+.unchecked {
+    color: red;
+    border: 1px solid red;
+    border-radius: 100%;
+    padding: 0 5px;
 }
