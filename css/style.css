@@ -1,17 +1,16 @@
+/* GENERAL */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 html {
     font-family: Roboto, serif;
 }
-
-ul,
-ol {
+ul, ol {
     list-style: none;
 }
+
 
 /* HEADER */
 .main-header {
@@ -23,13 +22,35 @@ ol {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     padding: 0 10px;
 }
-
 h1 {
     margin-left: 8px;
     font-weight: 900;
 }
 
+
 /* MAIN */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(240, 240, 240);
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+/* per centrare il container
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.tasks {
+    padding: 5px 40px;
+}
+.input-content {
+    padding: 10px 20px;
+}
 .container-header {
     display: flex;
     justify-content: start;
@@ -38,7 +59,6 @@ h1 {
     padding: 0 20px;
     border-bottom: 1px solid black;
 }
-
 .button {
     height: 28px;
     border-radius: 5px;
@@ -47,38 +67,24 @@ h1 {
     padding: 4px;
     background-color: rgb(69, 171, 233);
     color: rgb(255, 255, 255);
+    transition: 0.2s;
 }
-
-.container {
-    max-width: 1024px;
-    margin: 0 auto;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(240, 240, 240);
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+button:hover {
+    scale: 1.1;
 }
-
-.tasks {
-    padding: 20px 40px;
-}
-
-.input-content {
-    padding: 10px 20px;
-}
-
-
 
 
 /* Utilities */
 .blue-highlight,
 .purple-highlight,
 .green-highlight,
-.orange-highlight {
+.orange-highlight,
+.pink-highlight,
+.olive-highlight {
     border-radius: 10px;
     color: rgb(255, 255, 255);
     padding: 4px;
+    margin-left: 4px;
 }
 
 .blue-highlight {
@@ -95,4 +101,12 @@ h1 {
 
 .orange-highlight {
     background-color: rgb(242, 158, 51);
+}
+
+.pink-highlight {
+    background-color: rgb(216, 99, 160);
+}
+
+.olive-highlight {
+    background-color: rgb(170, 195, 37);
 }
